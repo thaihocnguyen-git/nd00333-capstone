@@ -33,7 +33,7 @@ The task of automl is "Classfification" and the metric I choose is "AUC_weighted
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 I don't see many parameters to change and try in the AutoML, it do almost thing for us. But I can increase the timeout have find more solution to choose. Beside, I can consider to include/exclude when run automl.
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
-![RunDetails](../images/autml-rundetails-output.png)
+![RunDetails](./images/autml-rundetails-output.png)
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
@@ -50,13 +50,13 @@ with used the Random Sampling method. There many parameter we can try: penalty, 
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 **I used the SDK v2 for this experiment, my experiment return the SweepJob object, which does not support RunDetails. It doesn't show anything**
-![RunDetails](../images/hp-rundetails.png)
+![RunDetails](./images/hp-rundetails.png)
 
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 The model to choose is from Hyperparameter turned model. The accuracy metric is 1, the deatils result is in the image below
-![ModelResult](../images/model-result.png)
+![ModelResult](./images/model-result.png)
 The values of `C` and `max_iter` is: `hyperparameters : {"C": 0.8386103335068411, "max_iter": 100}`
 
 ## Screen Recording
@@ -66,11 +66,11 @@ The values of `C` and `max_iter` is: `hyperparameters : {"C": 0.8386103335068411
 I would like to add this section to help reviewers to convinient when check the **Deploying the Model** in the rubric.
     1. Model registered
         a. AutoML
-            ![AutoML registered](../images/auto-registered-model.png)
+            ![AutoML registered](./images/auto-registered-model.png)
         b. Hyperdrive
-            ![Hyperdrive registered](../images/hp-best-model.png)
+            ![Hyperdrive registered](./images/hp-best-model.png)
     2. Model deployed: the best parameter turning model
-    ![deployed model](../images/hp-model-deployed.png)    
+    ![deployed model](./images/hp-model-deployed.png)    
     3. A file containing the environment details: the file `./conda_dependencies.yml`
 
 ## Standout Suggestions
