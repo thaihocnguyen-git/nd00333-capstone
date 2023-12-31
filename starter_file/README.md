@@ -65,5 +65,16 @@ The values of `C` and `max_iter` is: `hyperparameters : {"C": 0.8386103335068411
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
 
+## Deploying the Model
+I would like to add this section to help reviewers to convinient when check the **Deploying the Model** in the rubric.
+    1. Model registered
+        a. AutoML
+            ![AutoML registered](../images/auto-registered-model.png)
+        b. Hyperdrive
+            ![Hyperdrive registered](../images/hp-best-model.png)
+    2. Model deployed: the best parameter turning model
+    ![deployed model](../images/hp-model-deployed.png)    
+    3. A file containing the environment details: the file `./conda_dependencies.yml`
+
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
